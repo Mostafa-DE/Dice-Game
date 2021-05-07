@@ -1,0 +1,98 @@
+html {
+    background: url('https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80') no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+h1{
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.animation-Rolling1{
+    animation-name: dice1;
+    animation-duration: 0.3s;
+}
+
+.animation-Rolling2{
+    animation-name: dice2;
+    animation-duration: 0.3s;
+}
+
+.dice-style{
+    font-size: 8rem;
+    padding: 2rem;
+    margin: 10rem;
+}
+
+i{
+    color:rgb(44, 248, 214);
+    padding: 1rem;
+}
+
+.dice-style button{
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 213, 0.637);
+    color: rgb(85, 84, 84);
+}
+
+.dice-style button:hover {
+    background-color: rgb(32, 219, 188);
+    color: white;
+}
+
+@keyframes dice1 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+  }
+
+
+@keyframes dice2 {
+    from{transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+}
+
+
+.animation-RollingAll{
+    animation-name: allDice;
+    animation-duration: 1s;
+}
+
+
+
+
+@keyframes allDice {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+
+}
+
